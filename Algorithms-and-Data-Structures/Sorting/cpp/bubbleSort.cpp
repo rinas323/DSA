@@ -1,38 +1,35 @@
 /*
-Selection Sort is a simple comparison-based sorting algorithm.
-It works by repeatedly finding the smallest (or largest, depending on the order) 
-element from the unsorted part of the array and swapping it with the first unsorted element. 
-This process is repeated for every position in the array until the entire array is sorted.
+Bubble Sort is a simple comparison-based sorting algorithm.
+ It works by repeatedly swapping adjacent elements if they are in the wrong order,
+ which gradually moves the largest (or smallest) elements to their correct positions,
+ like bubbles rising to the surface.
+
 */
 #include<iostream>
 using namespace std;
+
 int main(){
-    int n;//size of the input array
+    
+    int n;//for size of the input array
     cout<<"enter the size of the array:"<<endl;
     cin>>n;
     int arr[n];
-    cout<<"input the array:"<<endl;
+    cout<<"enter the input array:"<<endl;
     
-    //for loop for taking user input
+    //for loop for taking input from user
     for(int i=0;i<n;i++){
         cin>>arr[i];
     }
     
     
-    //for loop for sorting using bubble sort
-    for(int i=0;i<n-1;i++){
-        int min=i;//for storing the minimum index
-        for(int j=i+1;j<n;j++){
-            if(arr[i]>arr[j]){
-                min=j;
+    //sorting array with bubble sort
+    for(int i=n-1;i>=0;i--){
+        for(int j=0;j<=i-1;j++){
+            if(arr[j]>arr[j+1]){
+                int temp=arr[j];
+                arr[j]=arr[j+1];
+                arr[j+1]=temp;
             }
-        }
-        
-        //swapping if the minimum index is changed
-        if(min!=i){
-            int temp=arr[i];
-            arr[i]=arr[min];
-            arr[min]=temp;
         }
     }
     
@@ -40,5 +37,6 @@ int main(){
     for(int i=0;i<n;i++){
         cout<<arr[i]<<" ";
     }
+    
     return 0;
 }
