@@ -5,13 +5,11 @@ using namespace std;
 struct node;
 node* createLL();
 void printLL(node* head);
-
 //definition of struct node
 struct node{
     int data;
     node* next;
 };
-
 //function to create a linked list
 node* createLL(){
     int n;
@@ -45,7 +43,6 @@ node* createLL(){
     return head;
     
 }
-
 //function to print linked list
 void printLL(node* head){
     node* temp;
