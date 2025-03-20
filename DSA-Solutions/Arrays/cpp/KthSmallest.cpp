@@ -12,7 +12,7 @@ Constraints:
 -10^9 <= arr[i] <= 10^9 (Array elements can be large negative or positive numbers)
 
 Approach:
-We will implement a simple selection sort-based approach to find the k-th smallest element without using built-in sorting functions.
+We will implement a simple selection sort-based approach to find the k-th smallest element
 */
 
 // Function to find the k-th smallest element using selection sort
