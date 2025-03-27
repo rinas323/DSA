@@ -18,5 +18,5 @@ This repository contains solutions to various **Data Structures and Algorithms (
 ## 🚀 How to Use
 1. Clone the repository:  
    ```bash
-   git clone https://github.com/your-username/dsa-repo.git
+   git clone https://github.com/rinas323/DSA.git
 
