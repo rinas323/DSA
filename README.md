@@ -1,4 +1,4 @@
-# DSA & Competitive Programming
+# DSA
 
 This repository contains solutions to various **Data Structures and Algorithms (DSA)** problems commonly found in **competitive programming**. It also includes **notes, explanations, and resources** to help understand and master key concepts.
 
